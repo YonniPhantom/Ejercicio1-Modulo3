@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Pilas</title>
+</head>
+<body>
+    <div class="container">
+        <h3>1.-</h3>
+        <div>
+            <label for="stack">Ingrese los elementos separados por coma:</label>
+            <input type="text" id="stack">
+        </div>
+        <div>
+            <label for="number">Ingrese el número de elementos a extraer:</label>
+            <input type="number" id="number">
+        </div>
+        <button onclick="extractElements()">Extraer Elementos</button>
+        
+        <div id="output"></div>
+
+        <div>
+            <h3>2.- </h3>
+            <div>
+                <label for="stack-replace">Ingrese los elementos separados por coma:</label>
+                <input type="text" id="stack-replace">
+            </div>
+            <div>
+                <label for="new-value">Nuevo Valor:</label>
+                <input type="number" id="new-value">
+            </div>
+            <div>
+                <label for="old-value">Valor Viejo:</label>
+                <input type="number" id="old-value">
+            </div>
+            <button onclick="replaceElement()">Reemplazar Elemento</button>
+            <div id="output-replace"></div>
+        </div>
+
+        <div>
+            <h3>3.- </h3>
+            <div>
+                <label for="towns">Ingrese los nombres de los pueblos separados por coma:</label>
+                <input type="text" id="towns">
+            </div>
+            <button onclick="showRoutes()">Mostrar Recorridos</button>
+            <div id="output-routes"></div>
+        </div>
+        
+        <div>
+            <h3>4.- </h3>
+            <div>
+                <label for="containers">Ingrese los números de identificación de los contenedores separados por coma:</label>
+                <input type="text" id="containers">
+            </div>
+            <div>
+                <label for="remove">Número de identificación del contenedor a retirar:</label>
+                <input type="number" id="remove">
+            </div>
+            <button onclick="removeContainer()">Retirar Contenedor</button>
+            <div id="output-containers"></div>
+        </div>
+        
+        
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
